@@ -4,8 +4,18 @@
     "target": "ES2022",
     "useDefineForClassFields": true,
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
+    "baseUrl": "src",
+    "allowJs": false,
     "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "composite": false,
+    "declaration": false,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "downlevelIteration": true,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -21,7 +31,8 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+    "types": ["twin.macro", "styled-components"]
   },
-  "include": ["src"]
+  "include": ["src", "types"]
 }
